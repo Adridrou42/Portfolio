@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<link rel="stylesheet" href="css/style.css">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<title>CABANEL Adrien</title>
+</head>
+
+<body id="principal">
+	<!-- Chargement des images pour l'introduction -->
+	<img src="images/fond_ecran.jpg" alt="Image Plein Écran" id="fullScreenImage">
+	<div id="div_power"><img src="images/POWER.png" alt="Bouton power" id="powerButton"></div>
+
+	<header>
+		<!-- Placement des boutons dans l'entête -->
+		<div class="bouton"></div>
+		<ul class="liste-horizontale">
+			<div class="bouton"><li> <!-- Lien affichant la page accueil -->
+				<a href="html/00_accueil.html" class="mon_lien">
+					<picture> <!-- Place le bouton normal ou réduit de la pade accueil -->
+						<source media="(max-width: 160lvh)" srcset="images/onglets/00_accueil_reduit.png">
+						<img src="images/onglets/00_accueil.png" alt="Mes Formations">
+					</picture>
+				</a>
+			</li></div>
+			<div class="bouton"><li> <!-- Lien affichant la page formations -->
+				<a href="html/01_formation.html" class="mon_lien">
+					<picture> <!-- Place le bouton normal ou réduit de la pade formations -->
+						<source media="(max-width: 160lvh)" srcset="images/onglets/01_formations_reduit.png">
+						<img src="images/onglets/01_formations.png" alt="Mes Formations">
+					</picture>
+				</a>
+			</li></div>
+			<div class="bouton"><li> <!-- Lien affichant la page experiences -->
+				<a href="html/02_experiences.html" class="mon_lien">
+					<picture> <!-- Place le bouton normal ou réduit de la pade experiences -->
+						<source media="(max-width: 160lvh)" srcset="images/onglets/02_experiences_reduit.png">
+						<img src="images/onglets/02_experiences.png" alt="Mes expériences">
+					</picture>
+				</a>
+			</li></div>
+			<div class="bouton"><li> <!-- Lien affichant la page technos -->
+				<a href="html/03_technos.html" class="mon_lien">
+					<picture> <!-- Place le bouton normal ou réduit de la pade technos -->
+						<source media="(max-width: 160lvh)" srcset="images/onglets/03_technos_reduit.png">
+						<img src="images/onglets/03_technos.png" alt="Les technologies maîtrisées">
+					</picture>
+				</a>
+			</li></div>
+			<div class="bouton"><li> <!-- Lien affichant la page projet -->
+				<a href="html/04_projet.html" class="mon_lien">
+					<picture> <!-- Place le bouton normal ou réduit de la pade projet -->
+						<source media="(max-width: 160lvh)" srcset="images/onglets/04_projet_reduit.png">
+						<img src="images/onglets/04_projet.png" alt="Mes projets">
+					</picture>
+				</a>
+			</li></div>
+			<div class="bouton"><li> <!-- Lien affichant la page interets -->
+				<a href="html/05_interets.html" class="mon_lien">
+					<picture> <!-- Place le bouton normal ou réduit de la pade interets -->
+						<source media="(max-width: 160lvh)" srcset="images/onglets/05_interets_reduit.png">
+						<img src="images/onglets/05_interets.png" alt="Mes intérets">
+					</picture>
+				</a>
+			</li></div>
+		</ul>
+	</header>
+
+	<main> <!-- Conteneur affichant les pages secondaires -->
+		<iframe id="contentFrame" src="html/00_accueil.html"></iframe>
+	</main>
+
+	<footer> <!-- Pied de page -->
+		<div style="float: left;">CABANEL Adrien - 2025</div> <!-- Div flottante alignée à gauche -->
+		<div style="float: right; text-align: right;">♪ Give Up ! - Give Up Robot 2 ♫</div> <!-- Div flottante alignée à droite -->
+	</footer>
+
+	<!-- Charge les sons et la musique -->
+	<audio id="son_survol" src="multimedia/sound.wav"></audio>
+	<audio id="son_clic" src="multimedia/start.wav"></audio>
+	<audio id="power_sound" src="multimedia/POWER.wav"></audio>
+	<audio id="super_musique" src="multimedia/super_musique.mp3" preload="none"></audio>
+
+	<!-- Charge les scriptes JS -->
+	<script src="javascript/POWER.js"></script>
+	<script src="javascript/onglets.js"></script>
+	
+</body>
+</html>

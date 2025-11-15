@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<link rel="stylesheet" href="../css/style.css">
+	<head>
+		<meta charset="UTF-8">
+		<style>body{background-color: black;color: cyan;}</style>
+	</head>
+	<body class="interets">
+		<main style="border: 0px;">
+            <br><h2 class="formations">Formulaire</h2><br> <!-- Titre -->
+			<form action="action.php" method="post">
+
+				<fieldset>
+					<legend><strong> Identité </strong></legend>
+
+					<label for="prenom">Prénom :</label>
+					<input type="text" id="prenom" name="prenom" placeholder="Prénom" autofocus tabindex="1"><br>
+
+					<label for="nom">Nom :</label>
+					<input type="text" id="nom" name="nom" placeholder="Nom" tabindex="2"><br>
+
+					<label for="naissance">Date de naissance :</label>
+					<input type="date" id="naissance" name="naissance" tabindex="3"><br>
+
+					Sexe :
+					<label for="sexe_m" name="sexe">M</label>
+					<input type="radio" id="sexe_m" name="sexe" tabindex="4">
+					<label for="sexe_f" name="sexe">F</label>
+					<input type="radio" id="sexe_m" name="sexe" tabindex="4"><br>
+
+					<label for="courriel">Courriel :</label>
+					<input type="email" id="courriel" name="courriel" placeholder="exemple@mail.com" tabindex="5"><br>
+				</fieldset>
+
+				<fieldset>
+					<legend><strong> Mieux vous connaître </strong></legend>
+
+					<label for="niveau">Niveau en HTML :</label>
+					<input type="range" id="niveau" name="niveau" min="0" max="5" tabindex="6"><br>
+
+					Cours préféré :<br>
+						<label for="cours1" name="cours">Maths</label>
+						<input type="radio" id="cours1" name="cours" tabindex="7"><br>
+						<label for="cours2" name="cours">Anglais</label>
+						<input type="radio" id="cours2" name="cours" tabindex="7"><br>
+						<label for="cours3" name="cours">Programmation</label>
+						<input type="radio" id="cours3" name="cours" checked tabindex="7"><br>
+
+					Département d'origine :<br>
+					<select name="departement" tabindex="8">
+						<option>Ardèche</option>
+						<option>Drôme</option>
+						<option selected>Loire</option>
+						<option>Autre</option>
+					</select><br>
+
+					Je viens en cours :<br>
+					<select name="departement" multiple tabindex="9">
+						<option>En bus</option>
+						<option>En voiture</option>
+						<option>A vélo</option>
+						<option>A pieds</option>
+					</select><br>
+				</fieldset>
+
+				<fieldset>
+					<legend><strong> Inscription à la formation </strong></legend>
+					
+					<label for="mot_de_passe">Mot de passe :</label>
+					<input type="password" id="mot_de_passe" name="mot_de_passe" placeholder="1234" tabindex="10"><br>
+
+					<textarea name="zone_texte" rows="5" cols="50" tabindex="11" placeholder="Ma motivation"></textarea><br>
+
+					<label for="contrat" name="cours"><em>J'ai bien lu les clauses que je n'ai pas lues</em></label>
+					<input type="checkbox" id="contrat" name="contrat" tabindex="12"><br>
+				</fieldset>
+
+				<input type="submit" value="Soumettre" tabindex="13">
+			</form>
+		</main>
+	</body>
+</html>
