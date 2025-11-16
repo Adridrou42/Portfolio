@@ -1,18 +1,20 @@
 /*----------====={Polices d'écriture}=====-----------*/
 @font-face { /* Corps de texte */
-   	font-family : Paintball;
-	src: url(../polices/paintball_beta.otf);}
+   	font-family : Texte;
+	src: url(../polices/tt_octosquare.ttf);}
 
 @font-face { /* Titre */
-   	font-family : Retro;
+   	font-family : Titre;
 	src: url(../polices/templo.ttf);}
 
 
 /*-----------------====={Body}=====------------------*/
 body { /* Configurations générales */
-	font-family : Paintball;
-	font-size: 2.7lvh;
-	color : rgba(255, 187, 0, 0.884);
+	background-color: rgba(1, 1, 36, 0.623);
+	font-family : Texte;
+	font-size: 4lvh;
+	color : rgba(0, 119, 255, 0.884);
+	line-height: 4lvh;
 	text-align: center;}
 
 #principal { /* Configurations générales spécifiques à l'index */
@@ -42,8 +44,9 @@ header { height: 10lvh;}
 footer { /* Style du pied de page */
 	color : rgba(223, 201, 130, 0.884);
 	text-align: left;
-	font-size: 1.5lvh;
-	font-family : Paintball;
+	font-size: 2.5lvh;
+	line-height: 2.5lvh;
+	font-family : Texte;
 	margin-left: 5lvw;
 	margin-right: 5lvw;
 	}
@@ -62,21 +65,27 @@ main { /* Style et positionnement de la boîte main */
 	top: 4lvh;
 	right: 4lvh;}
 
+
+#unity_game { /* Positionnement de l'image unity_game dans la page projet */
+	height: 40lvh;
+	max-height: 45lvw;
+margin-top: 1lvh;}
+
 @media (max-width: 160lvh) { /* Adaptativité à un écran de portable */
 	main { /* Main responsive */
 	margin-left: 1lvw;
 	margin-right: 1lvw;
-	height:86lvh;}
+	height:85lvh;}
 	footer { /* Pied de page responsive */
 		margin-left: 1lvw;
-		height:4lvh;}
+		height:.2.5lvh;}
 	#pix {position: static;}/* Image pix responsive (se positionne au centre) */
 }
 
 h2 { /* Style des titres */
-	font-family : Retro;
+	font-family : Titre;
 	font-size: 8lvh;
-	line-height: 6lvh;
+	line-height: 6.5lvh;
 	font-weight: normal;
 	margin: 1lvh;
 	text-shadow: 5px 5px rgba(0, 0, 0, 0.404);}
@@ -112,9 +121,10 @@ table {/* Couleurs du tableau de la page formations */
 
 tr {/* Couleur des cases normales */
 	background-color: rgba(250, 225, 2, 0.589);
-	color: rgba(28, 14, 218, 0.664);}
+	color: rgba(0, 47, 255, 0.884);}
 
-th {background-color: rgba(2, 250, 209, 0.24);} /* Couleur des cases titre */
+th {background-color: rgba(2, 250, 209, 0.24);
+	font-weight: normal;} /* Couleur des cases titre */
 
 /* Style du strong et du em */
 strong {color : rgba(255, 0, 0, 0.884);font-weight: normal; }
