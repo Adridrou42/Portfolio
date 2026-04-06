@@ -12,10 +12,13 @@
 body { /* Configurations générales */
 	font-family : Texte;
 	font-size: 4dvh;
-	color : #000141;
 	line-height: 4dvh;
 	text-align: center;
+	color : #000141;
+	text-shadow: 0.1dvh 0.2dvh rgb(0, 0, 0, 0.404);
 	margin: 0;
+	background-image: url('../images/carreaux/filtre_carreaux.png');
+	background-size: 4dvh;
 }
 
 #principal { /* Configurations générales spécifiques à l'index */
@@ -58,7 +61,7 @@ header { /* Position des boutons dans l'entête */
 	padding: 0.5dvh;
 	background-size: contain;
 	background-color: #00000000;
-	border: solid, 2px, #EEEEEE;
+	border: solid, 0.3dvh, #EEEEEE;
     margin: 0.5dvw;
 }
 
@@ -66,7 +69,7 @@ header { /* Position des boutons dans l'entête */
 	background-color: #FFFFFF50;
 }
 
-picture > img {
+picture > img { /* Images dans les boutons */
 	height: 7dvh;
 	max-height: 10dvw;
 	max-width: 12dvw;
@@ -96,11 +99,16 @@ main { /* Style et positionnement de la boîte main */
 	top: 4dvh;
 	right: 4dvh;}
 
+.prog_logo {
+	height: 12dvh;
+	margin: 1dvh;
+}
+
 
 #godot_game { /* Positionnement de l'image godot_game dans la page projet */
 	height: 40dvh;
 	max-height: 45dvw;
-margin-top: 1dvh;}
+	margin-top: 1dvh;}
 
 @media (max-width: 160dvh) { /* Adaptativité à un écran de portable */
 	#principal{
@@ -118,15 +126,15 @@ h2 { /* Style des titres */
 	line-height: 6.5dvh;
 	font-weight: normal;
 	margin: 1dvh;
-	text-shadow: 5px 5px rgba(0, 0, 0, 0.404);}
+	text-shadow: 0.5dvh 0.5dvh rgb(0, 0, 0, 0.404);}
 
 /* Couleur des carreaux de chaque page */
-body.accueil {background-image:url('../images/carreaux/image_1.png');}
-body.formations {background-image:url('../images/carreaux/image_2.png');}
-body.experiences {background-image:url('../images/carreaux/image_3.png');}
-body.technologies {background-image:url('../images/carreaux/image_4.png');}
-body.projet {background-image:url('../images/carreaux/image_5.png');}
-body.interets {background-image:url('../images/carreaux/image_6.png');}
+body.accueil {background-color: rgba(221, 221, 221, 0.5);}
+body.formations {background-color: rgba(255, 153, 0, 0.5);}
+body.experiences {background-color: rgba(255, 0, 0, 0.5);}
+body.technologies {background-color: rgba(0, 132, 255, 0.5);}
+body.projet {background-color: rgba(7, 212, 0, 0.5);}
+body.interets {background-color: rgba(206, 0, 224, 0.5);}
 
 /* Couleur des titres de chaque pages */
 h2.accueil {color : rgba(255, 255, 255, 0.836);}
@@ -153,7 +161,7 @@ th {background-color: rgba(2, 250, 209, 0.24);
 	font-weight: normal;} /* Couleur des cases titre */
 
 /* Style du strong et du em */
-strong {color : rgba(255, 0, 0, 0.884);font-weight: normal; }
+strong {color : rgba(187, 0, 0, 0.884);font-weight: normal; }
 em {color : rgba(135, 233, 7, 0.884); }
 
 /* Taille du conteneur affichant les pages secondaires */

@@ -7,7 +7,7 @@
 	<title>CABANEL Adrien</title>
 </head>
 
-<body>
+<body style="background-color: black;">
 	<!-- Chargement des images pour l'introduction -->
 	<img src="images/fond_ecran.jpg" alt="Image Plein Écran" id="fullScreenImage">
 	<div id="div_power"><img src="images/POWER.png" alt="Bouton power" id="powerButton"></div>
@@ -16,71 +16,71 @@
 
 	<div  id="principal">
 
-	<header>
-		<!-- Placement des boutons dans l'entête -->
-			<!-- Lien affichant la page accueil -->
-			<a href="html/00_accueil.html" class="bouton b00 mon_lien">
+		<header>
+			<!-- Placement des boutons dans l'entête -->
+				<!-- Lien affichant la page accueil -->
+				<a href="html/00_accueil.html" class="bouton b00 mon_lien">
 					<picture> <!-- Place le bouton normal ou réduit de la page accueil -->
 						<source media="(max-width: 160lvh)" srcset="images/onglets/00_accueil_reduit.png">
 						<img src="images/onglets/00_accueil.png" alt="Mes Formations">
 					</picture>
-			</a>
-			<!-- Lien affichant la page formations -->
-			<a href="html/01_formation.html" class="bouton b01 mon_lien">
+				</a>
+				<!-- Lien affichant la page formations -->
+				<a href="html/01_formation.html" class="bouton b01 mon_lien">
 					<picture> <!-- Place le bouton normal ou réduit de la page formations -->
 						<source media="(max-width: 160lvh)" srcset="images/onglets/01_formations_reduit.png">
 						<img src="images/onglets/01_formations.png" alt="Mes Formations">
 					</picture>
-			</a>
-			<!-- Lien affichant la page experiences -->
-			<a href="html/02_experiences.html" class="bouton b02 mon_lien">
+				</a>
+				<!-- Lien affichant la page experiences -->
+				<a href="html/02_experiences.html" class="bouton b02 mon_lien">
 					<picture> <!-- Place le bouton normal ou réduit de la page experiences -->
 						<source media="(max-width: 160lvh)" srcset="images/onglets/02_experiences_reduit.png">
 						<img src="images/onglets/02_experiences.png" alt="Mes expériences">
 					</picture>
-			</a>
-			<!-- Lien affichant la page technos -->
-			<a href="html/03_technos.html" class="bouton b03 mon_lien">
+				</a>
+				<!-- Lien affichant la page technos -->
+				<a href="html/03_technos.html" class="bouton b03 mon_lien">
 					<picture> <!-- Place le bouton normal ou réduit de la page technos -->
 						<source media="(max-width: 160lvh)" srcset="images/onglets/03_technos_reduit.png">
 						<img src="images/onglets/03_technos.png" alt="Les technologies maîtrisées">
 					</picture>
-			</a>
-			<!-- Lien affichant la page projet -->
-			<a href="html/04_projet.html" class="bouton b04 mon_lien">
+				</a>
+				<!-- Lien affichant la page projet -->
+				<a href="html/04_projet.html" class="bouton b04 mon_lien">
 					<picture> <!-- Place le bouton normal ou réduit de la page projet -->
 						<source media="(max-width: 160lvh)" srcset="images/onglets/04_projet_reduit.png">
 						<img src="images/onglets/04_projet.png" alt="Mes projets">
 					</picture>
-			</a>
-			<!-- Lien affichant la page mes intérêts -->
-			<a href="html/05_interets.html" class="bouton b05 mon_lien">
+				</a>
+				<!-- Lien affichant la page mes intérêts -->
+				<a href="html/05_interets.html" class="bouton b05 mon_lien">
 					<picture> <!-- Place le bouton normal ou réduit de la page interets -->
 						<source media="(max-width: 160lvh)" srcset="images/onglets/05_interets_reduit.png">
 						<img src="images/onglets/05_interets.png" alt="Mes intérets">
 					</picture>
-			</a>
-	</header>
+				</a>
+		</header>
 
-	<main> <!-- Conteneur affichant les pages secondaires -->
-		<iframe id="contentFrame" src="html/00_accueil.html"></iframe>
-	</main>
+		<main> <!-- Conteneur affichant les pages secondaires -->
+			<iframe id="contentFrame" src="html/00_accueil.html"></iframe>
+		</main>
 
-	<footer> <!-- Pied de page -->
-		<div style="float: left;">CABANEL Adrien - 2025</div> <!-- Div flottante alignée à gauche -->
-		<div style="float: right; text-align: right;">♪ The Final Act - <strong>The </strong>NO<strong>existence</strong>N<strong> of you </strong>AND <strong>me</strong> ♫</div> <!-- Div flottante alignée à droite -->
-	</footer>
+		<footer> <!-- Pied de page -->
+			<div style="float: left;">CABANEL Adrien - 2025</div> <!-- Div flottante alignée à gauche -->
+			<div style="float: right; text-align: right;">♪ The Final Act - <strong>The </strong>NO<strong>existence</strong>N<strong> of you </strong>AND <strong>me</strong> ♫</div> <!-- Div flottante alignée à droite -->
+		</footer>
 
-	<!-- Charge les sons et la musique -->
-	<audio id="son_survol" src="multimedia/sound.wav"></audio>
-	<audio id="son_clic" src="multimedia/start.wav"></audio>
-	<audio id="power_sound" src="multimedia/POWER.wav"></audio>
-	<audio id="super_musique" src="multimedia/super_musique.mp3" preload="none"></audio>
+		<!-- Charge les sons et la musique -->
+		<audio id="son_survol" src="multimedia/sound.wav"></audio>
+		<audio id="son_clic" src="multimedia/start.wav"></audio>
+		<audio id="power_sound" src="multimedia/POWER.wav"></audio>
+		<audio id="super_musique" src="multimedia/super_musique.mp3" preload="none"></audio>
 
-	<!-- Charge les scriptes JS -->
-	<script src="javascript/POWER.js"></script>
-	<script src="javascript/onglets.js"></script>
+		<!-- Charge les scriptes JS -->
+		<script src="javascript/POWER.js"></script>
+		<script src="javascript/onglets.js"></script>
 
-</div>
+	</div>
 </body>
 </html>
