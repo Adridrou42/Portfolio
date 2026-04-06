@@ -10,84 +10,114 @@
 
 /*-----------------====={Body}=====------------------*/
 body { /* Configurations générales */
-	background-color: rgba(1, 1, 36, 0.623);
 	font-family : Texte;
-	font-size: 4lvh;
-	color : rgba(0, 119, 255, 0.884);
-	line-height: 4lvh;
-	text-align: center;}
+	font-size: 4dvh;
+	color : #000141;
+	line-height: 4dvh;
+	text-align: center;
+	margin: 0;
+}
 
 #principal { /* Configurations générales spécifiques à l'index */
-	background-image:url('../images/fond_ecran.jpg');
     background-size: cover;
-	background-position: center;}
+	background-position: center;
+	margin: 0%;
+	margin-left: 5dvw;
+	margin-right: 5dvw;
+}
+
+#animated_wallpaper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+	z-index: -10;
+}
 
 
 /*----------------====={Entête}=====-----------------*/
-.liste-horizontale { /* Position des boutons dans l'entête */
-    list-style-type: none;
+header { /* Position des boutons dans l'entête */
     display: flex;
     justify-content: space-between;
     padding: 0;
-    margin: 0;}
+}
+
+/* Arière plan des boutons */
+.b00 {background-image: url("../images/carreaux/bouton_bg_00.png");}
+.b01 {background-image: url("../images/carreaux/bouton_bg_01.png");}
+.b02 {background-image: url("../images/carreaux/bouton_bg_02.png");}
+.b03 {background-image: url("../images/carreaux/bouton_bg_03.png");}
+.b04 {background-image: url("../images/carreaux/bouton_bg_04.png");}
+.b05 {background-image: url("../images/carreaux/bouton_bg_05.png");}
 
 .bouton{ /* Style des boutons de l'entête */
-	height: 1lvh;
-	width: 40lvh;
-	text-align: center;}
+	height: 100%;
+	width: 15dvw;
+	text-align: center;
+	padding: 0.5dvh;
+	background-size: contain;
+	background-color: #00000000;
+	border: solid, 2px, #EEEEEE;
+    margin: 0.5dvw;
+}
 
-/* Épaisseur de l'entête */
-header { height: 10lvh;}
+.bouton:hover {
+	background-color: #FFFFFF50;
+}
+
+picture > img {
+	height: 7dvh;
+	max-height: 10dvw;
+	max-width: 12dvw;
+	margin-bottom: 1dvh;
+	-webkit-box-reflect: below 5% linear-gradient(transparent 70%, white);
+}
 
 
 /*-------------====={Pied de page}=====--------------*/
 footer { /* Style du pied de page */
-	color : rgba(223, 201, 130, 0.884);
+	color : #ffdcdc;
 	text-align: left;
-	font-size: 2.5lvh;
-	line-height: 2.5lvh;
+	font-size: 2.5dvh;
+	line-height: 2.5dvh;
 	font-family : Texte;
-	margin-left: 5lvw;
-	margin-right: 5lvw;
-	}
+}
 
 
 /*---------------====={Principal}=====---------------*/
 main { /* Style et positionnement de la boîte main */
-	margin-left: 5lvw;
-	margin-right: 5lvw;
-	height:85lvh;
-	border: 0.4lvh solid rgba(100, 100, 100, 0.555);} 	
+	height:83dvh;
+	border: 0.4dvh solid rgba(255, 255, 255, 0.555);} 	
 
 #pix { /* Positionnement de l'image pix dans la page formations */
-	height: 20lvh;
+	height: 20dvh;
 	position: absolute;
-	top: 4lvh;
-	right: 4lvh;}
+	top: 4dvh;
+	right: 4dvh;}
 
 
 #godot_game { /* Positionnement de l'image godot_game dans la page projet */
-	height: 40lvh;
-	max-height: 45lvw;
-margin-top: 1lvh;}
+	height: 40dvh;
+	max-height: 45dvw;
+margin-top: 1dvh;}
 
-@media (max-width: 160lvh) { /* Adaptativité à un écran de portable */
+@media (max-width: 160dvh) { /* Adaptativité à un écran de portable */
+	#principal{
+		margin-left: 1dvw;
+		margin-right: 1dvw;
+	}
 	main { /* Main responsive */
-	margin-left: 1lvw;
-	margin-right: 1lvw;
-	height:85lvh;}
-	footer { /* Pied de page responsive */
-		margin-left: 1lvw;
-		height:.2.5lvh;}
+		height:85dvh;}
 	#pix {position: static;}/* Image pix responsive (se positionne au centre) */
 }
 
 h2 { /* Style des titres */
 	font-family : Titre;
-	font-size: 8lvh;
-	line-height: 6.5lvh;
+	font-size: 8dvh;
+	line-height: 6.5dvh;
 	font-weight: normal;
-	margin: 1lvh;
+	margin: 1dvh;
 	text-shadow: 5px 5px rgba(0, 0, 0, 0.404);}
 
 /* Couleur des carreaux de chaque page */
@@ -106,18 +136,14 @@ h2.technologies {color : rgba(0, 238, 255, 0.836);}
 h2.projet {color : rgba(9, 255, 0, 0.836);}
 h2.interets {color : rgba(234, 0, 255, 0.836);}
 
-
-img {height: 8lvh;} /* Taille de l'image par défaut */
-img:hover {height: 9lvh;} /* Taille de l'image lorsque survolée */
-
 li {list-style-type: none;} /* Retire les puces de la liste de la page technos */
 
 /* Style du tableau de la page formations */
 table {/* Couleurs du tableau de la page formations */ 
 	border: 2px solid rgba(60, 255, 0, 0.801);
 	table-layout: auto;
-	width: 80lvw;
-	max-width: 80lvh;}
+	width: 80dvw;
+	max-width: 80dvh;}
 
 tr {/* Couleur des cases normales */
 	background-color: rgba(250, 225, 2, 0.589);
@@ -145,22 +171,23 @@ a:active {color: rgba(255, 187, 0, 0.884);} /* Lien cliqué */
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100dvw;
+    height: 100dvh;
     object-fit: cover;
+	z-index: 5;
 }
 
 #powerButton { /* style du bouton POWER */
-	height: 40lvh;
+	height: 40dvh;
 	width: auto;
 	cursor: pointer;}
-#powerButton:hover {height: 40.5lvh;} /* Lorsque survolé */
+#powerButton:hover {height: 40.5dvh;} /* Lorsque survolé */
 
 #div_power { /* Div permettant de centrer le bouton POWER */
 	position: absolute;
-	top: 25lvh;
-	height: 20lvh;
-	width: 99%;
+	top: 25dvh;
+	height: 20dvh;
+	width: 100%;
 	text-align: center;
 	z-index: 10;
 }

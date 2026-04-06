@@ -7,7 +7,7 @@ const iframe = document.getElementById('contentFrame');
 
 liens.forEach(lien => {
 	// Jouer un son au survol
-	lien.addEventListener('mouseover', () => {
+	lien.addEventListener('mouseenter', () => {
 	if (son) { son.currentTime = 0; son.play(); }
 	});
 

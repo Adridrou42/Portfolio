@@ -7,64 +7,59 @@
 	<title>CABANEL Adrien</title>
 </head>
 
-<body id="principal">
+<body>
 	<!-- Chargement des images pour l'introduction -->
 	<img src="images/fond_ecran.jpg" alt="Image Plein Écran" id="fullScreenImage">
 	<div id="div_power"><img src="images/POWER.png" alt="Bouton power" id="powerButton"></div>
 
+	<iframe id="animated_wallpaper" src="godot_wallpaper/index.html"></iframe>
+
+	<div  id="principal">
+
 	<header>
 		<!-- Placement des boutons dans l'entête -->
-		<div class="bouton"></div>
-		<ul class="liste-horizontale">
-			<div class="bouton"><li> <!-- Lien affichant la page accueil -->
-				<a href="html/00_accueil.html" class="mon_lien">
-					<picture> <!-- Place le bouton normal ou réduit de la pade accueil -->
+			<!-- Lien affichant la page accueil -->
+			<a href="html/00_accueil.html" class="bouton b00 mon_lien">
+					<picture> <!-- Place le bouton normal ou réduit de la page accueil -->
 						<source media="(max-width: 160lvh)" srcset="images/onglets/00_accueil_reduit.png">
 						<img src="images/onglets/00_accueil.png" alt="Mes Formations">
 					</picture>
-				</a>
-			</li></div>
-			<div class="bouton"><li> <!-- Lien affichant la page formations -->
-				<a href="html/01_formation.html" class="mon_lien">
-					<picture> <!-- Place le bouton normal ou réduit de la pade formations -->
+			</a>
+			<!-- Lien affichant la page formations -->
+			<a href="html/01_formation.html" class="bouton b01 mon_lien">
+					<picture> <!-- Place le bouton normal ou réduit de la page formations -->
 						<source media="(max-width: 160lvh)" srcset="images/onglets/01_formations_reduit.png">
 						<img src="images/onglets/01_formations.png" alt="Mes Formations">
 					</picture>
-				</a>
-			</li></div>
-			<div class="bouton"><li> <!-- Lien affichant la page experiences -->
-				<a href="html/02_experiences.html" class="mon_lien">
-					<picture> <!-- Place le bouton normal ou réduit de la pade experiences -->
+			</a>
+			<!-- Lien affichant la page experiences -->
+			<a href="html/02_experiences.html" class="bouton b02 mon_lien">
+					<picture> <!-- Place le bouton normal ou réduit de la page experiences -->
 						<source media="(max-width: 160lvh)" srcset="images/onglets/02_experiences_reduit.png">
 						<img src="images/onglets/02_experiences.png" alt="Mes expériences">
 					</picture>
-				</a>
-			</li></div>
-			<div class="bouton"><li> <!-- Lien affichant la page technos -->
-				<a href="html/03_technos.html" class="mon_lien">
-					<picture> <!-- Place le bouton normal ou réduit de la pade technos -->
+			</a>
+			<!-- Lien affichant la page technos -->
+			<a href="html/03_technos.html" class="bouton b03 mon_lien">
+					<picture> <!-- Place le bouton normal ou réduit de la page technos -->
 						<source media="(max-width: 160lvh)" srcset="images/onglets/03_technos_reduit.png">
 						<img src="images/onglets/03_technos.png" alt="Les technologies maîtrisées">
 					</picture>
-				</a>
-			</li></div>
-			<div class="bouton"><li> <!-- Lien affichant la page projet -->
-				<a href="html/04_projet.html" class="mon_lien">
-					<picture> <!-- Place le bouton normal ou réduit de la pade projet -->
+			</a>
+			<!-- Lien affichant la page projet -->
+			<a href="html/04_projet.html" class="bouton b04 mon_lien">
+					<picture> <!-- Place le bouton normal ou réduit de la page projet -->
 						<source media="(max-width: 160lvh)" srcset="images/onglets/04_projet_reduit.png">
 						<img src="images/onglets/04_projet.png" alt="Mes projets">
 					</picture>
-				</a>
-			</li></div>
-			<div class="bouton"><li> <!-- Lien affichant la page interets -->
-				<a href="html/05_interets.html" class="mon_lien">
-					<picture> <!-- Place le bouton normal ou réduit de la pade interets -->
+			</a>
+			<!-- Lien affichant la page mes intérêts -->
+			<a href="html/05_interets.html" class="bouton b05 mon_lien">
+					<picture> <!-- Place le bouton normal ou réduit de la page interets -->
 						<source media="(max-width: 160lvh)" srcset="images/onglets/05_interets_reduit.png">
 						<img src="images/onglets/05_interets.png" alt="Mes intérets">
 					</picture>
-				</a>
-			</li></div>
-		</ul>
+			</a>
 	</header>
 
 	<main> <!-- Conteneur affichant les pages secondaires -->
@@ -73,7 +68,7 @@
 
 	<footer> <!-- Pied de page -->
 		<div style="float: left;">CABANEL Adrien - 2025</div> <!-- Div flottante alignée à gauche -->
-		<div style="float: right; text-align: right;">♪ Give Up ! - Give Up Robot 2 ♫</div> <!-- Div flottante alignée à droite -->
+		<div style="float: right; text-align: right;">♪ The Final Act - <strong>The </strong>NO<strong>existence</strong>N<strong> of you </strong>AND <strong>me</strong> ♫</div> <!-- Div flottante alignée à droite -->
 	</footer>
 
 	<!-- Charge les sons et la musique -->
@@ -85,6 +80,7 @@
 	<!-- Charge les scriptes JS -->
 	<script src="javascript/POWER.js"></script>
 	<script src="javascript/onglets.js"></script>
-	
+
+</div>
 </body>
 </html>
