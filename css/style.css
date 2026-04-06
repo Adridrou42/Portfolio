@@ -129,12 +129,12 @@ h2 { /* Style des titres */
 	text-shadow: 0.5dvh 0.5dvh rgb(0, 0, 0, 0.404);}
 
 /* Couleur des carreaux de chaque page */
-body.accueil {background-color: rgba(221, 221, 221, 0.5);}
-body.formations {background-color: rgba(255, 153, 0, 0.5);}
-body.experiences {background-color: rgba(255, 0, 0, 0.5);}
-body.technologies {background-color: rgba(0, 132, 255, 0.5);}
-body.projet {background-color: rgba(7, 212, 0, 0.5);}
-body.interets {background-color: rgba(206, 0, 224, 0.5);}
+body.accueil {background-color: rgba(221, 221, 221, 0.3);}
+body.formations {background-color: rgba(255, 153, 0, 0.3);}
+body.experiences {background-color: rgba(255, 0, 0, 0.3);}
+body.technologies {background-color: rgba(0, 132, 255, 0.3);}
+body.projet {background-color: rgba(7, 212, 0, 0.3);}
+body.interets {background-color: rgba(206, 0, 224, 0.3);}
 
 /* Couleur des titres de chaque pages */
 h2.accueil {color : rgba(255, 255, 255, 0.836);}

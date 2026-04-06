@@ -5,6 +5,24 @@ const son = document.getElementById('son_survol');
 const sonClic = document.getElementById('son_clic');
 const iframe = document.getElementById('contentFrame');
 
+// Précharger les pages en arrière-plan
+function preloadPages() {
+	liens.forEach(lien => {
+		const href = lien.getAttribute('href');
+		if (href) {
+			// Précharger silencieusement via fetch (met en cache le contenu)
+			fetch(href).catch(() => {}); // Ignorer les erreurs
+		}
+	});
+}
+
+// Lancer le préchargement au démarrage de la page
+if (document.readyState === 'loading') {
+	document.addEventListener('DOMContentLoaded', preloadPages);
+} else {
+	preloadPages();
+}
+
 liens.forEach(lien => {
 	// Jouer un son au survol
 	lien.addEventListener('mouseenter', () => {
