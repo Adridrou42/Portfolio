@@ -14,7 +14,7 @@ body { /* Configurations générales */
 	font-size: 4dvh;
 	line-height: 4dvh;
 	text-align: center;
-	color : #000141;
+	color : #d1d1d1;
 	text-shadow: 0.1dvh 0.2dvh rgb(0, 0, 0, 0.404);
 	margin: 0;
 	background-image: url('../images/carreaux/filtre_carreaux.png');
