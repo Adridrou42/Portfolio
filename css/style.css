@@ -67,6 +67,16 @@ header { /* Position des boutons dans l'entête */
 
 .bouton:hover {
 	background-color: #FFFFFF50;
+	animation: defilement 5s linear infinite;
+}
+
+@keyframes defilement {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
 }
 
 picture > img { /* Images dans les boutons */
@@ -93,22 +103,73 @@ main { /* Style et positionnement de la boîte main */
 	height:83dvh;
 	border: 0.4dvh solid rgba(255, 255, 255, 0.555);} 	
 
+/* ========== FORMATIONS ========== */
+
 #pix { /* Positionnement de l'image pix dans la page formations */
 	height: 20dvh;
 	position: absolute;
 	top: 4dvh;
-	right: 4dvh;}
+	right: 4dvh;
+}
 
-.prog_logo {
+/* Style du tableau de la page formations */
+table {/* Couleurs du tableau de la page formations */ 
+	border: 2px solid rgba(60, 255, 0, 0.801);
+	table-layout: auto;
+	width: 80dvw;
+	max-width: 80dvh;
+}
+
+tr {/* Couleur des cases normales */
+	background-color: rgba(250, 225, 2, 0.589);
+	color: rgba(0, 47, 255, 0.884);
+}
+
+th { /* Couleur des cases titre */
+	background-color: rgba(2, 250, 209, 0.24);
+	font-weight: normal;
+}
+
+/* ========= TECHNOLOGIES ========= */
+
+.prog_logo { /* Taille et position des logos dans la page technos */
 	height: 12dvh;
 	margin: 1dvh;
 }
 
+/* ============ PROJET ============ */
 
 #godot_game { /* Positionnement de l'image godot_game dans la page projet */
 	height: 40dvh;
 	max-height: 45dvw;
 	margin-top: 1dvh;}
+
+/* =========== CONTACT ============ */
+
+input, select, textarea{ /* Style du formulaire */
+	background-color: rgba(255, 255, 255, 0.1);
+	color: rgb(220, 220, 220);
+	font-family : Texte;
+	font-size: 3dvh;
+	margin: 0.2dvh;
+	border: solid 0.2dvh #8d8d8d;
+}
+
+form > div, form > div > input{ /* Responsivité des boutons */
+	display: inline-block;
+	margin-left: 1dvh;
+}
+form > div > input{
+	width: 25dvh;
+}
+
+.message{ /* Responsivité de la zone de texte */
+	width: 100dvh;
+	max-width: 98dvw;
+	margin: 0;
+}
+
+/* ======== RESPONSIVITÉ ========= */
 
 @media (max-width: 160dvh) { /* Adaptativité à un écran de portable */
 	#principal{
@@ -120,13 +181,16 @@ main { /* Style et positionnement de la boîte main */
 	#pix {position: static;}/* Image pix responsive (se positionne au centre) */
 }
 
+/* =========== GÉNÉRAL ============ */
+
 h2 { /* Style des titres */
 	font-family : Titre;
 	font-size: 8dvh;
 	line-height: 6.5dvh;
 	font-weight: normal;
 	margin: 1dvh;
-	text-shadow: 0.5dvh 0.5dvh rgb(0, 0, 0, 0.404);}
+	text-shadow: 0.5dvh 0.5dvh rgb(0, 0, 0, 0.404);
+}
 
 /* Couleur des carreaux de chaque page */
 body.accueil {background-color: rgba(221, 221, 221, 0.3);}
@@ -134,7 +198,7 @@ body.formations {background-color: rgba(255, 153, 0, 0.3);}
 body.experiences {background-color: rgba(255, 0, 0, 0.3);}
 body.technologies {background-color: rgba(0, 132, 255, 0.3);}
 body.projet {background-color: rgba(7, 212, 0, 0.3);}
-body.interets {background-color: rgba(206, 0, 224, 0.3);}
+body.contact {background-color: rgba(206, 0, 224, 0.3);}
 
 /* Couleur des titres de chaque pages */
 h2.accueil {color : rgba(255, 255, 255, 0.836);}
@@ -142,27 +206,11 @@ h2.formations {color : rgba(255, 153, 0, 0.836);}
 h2.experiences {color : rgba(255, 17, 0, 0.877);}
 h2.technologies {color : rgba(0, 238, 255, 0.836);}
 h2.projet {color : rgba(9, 255, 0, 0.836);}
-h2.interets {color : rgba(234, 0, 255, 0.836);}
-
-li {list-style-type: none;} /* Retire les puces de la liste de la page technos */
-
-/* Style du tableau de la page formations */
-table {/* Couleurs du tableau de la page formations */ 
-	border: 2px solid rgba(60, 255, 0, 0.801);
-	table-layout: auto;
-	width: 80dvw;
-	max-width: 80dvh;}
-
-tr {/* Couleur des cases normales */
-	background-color: rgba(250, 225, 2, 0.589);
-	color: rgba(0, 47, 255, 0.884);}
-
-th {background-color: rgba(2, 250, 209, 0.24);
-	font-weight: normal;} /* Couleur des cases titre */
+h2.contact {color : rgba(234, 0, 255, 0.836);}
 
 /* Style du strong et du em */
-strong {color : rgba(187, 0, 0, 0.884);font-weight: normal; }
-em {color : rgba(135, 233, 7, 0.884); }
+strong {color : rgb(206, 0, 0);font-weight: normal; }
+em {color : rgb(135, 233, 7); }
 
 /* Taille du conteneur affichant les pages secondaires */
 iframe {width: 100%; height: 100%; border: none;}

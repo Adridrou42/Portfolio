@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<link rel="stylesheet" href="../css/style.css">
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<body class="contact">
+		<br><h2 class="contact">ME CONTACTER</h2><br>
+
+		<!-- Utilisation de EmailJS  -->
+		<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+		<script>
+			(function(){
+				emailjs.init("uCPIP5yiMWEWBPVpB"); // Clef API publique
+			})();
+		</script>
+
+		<form id="contact-form" class="form">
+			<div>
+				<input type="text" name="nom" placeholder="Nom" required>
+				<input type="text" name="prenom" placeholder="Prénom" required>
+			</div><div>
+				<input type="mail" name="courriel" placeholder="Courriel" required>
+				<input type="tel" name="tel" placeholder="Téléphone" required>
+			</div><br><br>
+			
+			<input  class="message" type="text" name="objet" placeholder="Objet" required><br>
+			<textarea class="message" name="message" placeholder="Votre message..." rows="5" required></textarea><br>
+
+			<input type="submit" value="Envoyer" class="button">
+    	</form>
+
+		<script>
+			function isValidEmail(email) {
+				return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+			}
+
+			function isValidPhone(phone) {
+				return /^(?:\+33|0)[1-9](?:[\s.-]?\d{2}){4}$/.test(phone);
+			}
+
+			document.getElementById("contact-form").addEventListener("submit", function(e) {
+				e.preventDefault();
+
+				const email = this.courriel.value.trim();
+				const phone = this.tel.value.trim();
+
+				if (!isValidEmail(email)) {
+					alert("Adresse de courriel invalide.");
+					return;
+				}
+
+				if (!isValidPhone(phone)) {
+					alert("Numéro de téléphone invalide.");
+					return;
+				}
+
+				emailjs.sendForm("portfolio","template_5vt02dd",this)
+				.then(
+					function()
+						{alert("Email envoyé avec succès !");},
+					function(error)
+						{alert("Erreur : " + error.text);}
+				);
+			});
+		</script>
+
+	</body>
+</html>
