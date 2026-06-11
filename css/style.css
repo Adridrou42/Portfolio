@@ -65,9 +65,11 @@ header { /* Position des boutons dans l'entête */
     margin: 0.5dvw;
 }
 
-.bouton:hover {
-	background-color: #FFFFFF50;
-	animation: defilement 5s linear infinite;
+@media (pointer: fine){ /* Animation du bouton lorsque l'écran n'est pas tactile */
+	.bouton:hover {
+		background-color: #FFFFFF50;
+		animation: defilement 5s linear infinite;
+	}
 }
 
 @keyframes defilement {
@@ -105,11 +107,25 @@ main { /* Style et positionnement de la boîte main */
 
 /* ========== FORMATIONS ========== */
 
-#pix { /* Positionnement de l'image pix dans la page formations */
-	height: 20dvh;
-	position: absolute;
+aside {
+	position : absolute;
+	width : 20dvh;
 	top: 4dvh;
 	right: 4dvh;
+	padding : 1dvh;
+	
+	border: solid, 0.3dvh, #ada817;
+	border-radius: 2dvh;
+	background-color: #0000FF50;
+	background-image: url("../images/carreaux/filtre_carreaux.png");
+	background-size: 3dvh;
+}
+
+aside > a > img {
+	width : 100%;
+	height : auto;
+	margin-top: 1dvh;
+	margin-bottom: 1dvh;
 }
 
 /* Style du tableau de la page formations */
@@ -139,9 +155,10 @@ th { /* Couleur des cases titre */
 
 /* ============ PROJET ============ */
 
-#godot_game { /* Positionnement de l'image godot_game dans la page projet */
+.game_trailer { /* Positionnement de la vidéo */
 	height: 40dvh;
 	max-height: 45dvw;
+	width: 60dvh;
 	margin-top: 1dvh;}
 
 /* =========== CONTACT ============ */
@@ -178,7 +195,16 @@ form > div > input{
 	}
 	main { /* Main responsive */
 		height:85dvh;}
-	#pix {position: static;}/* Image pix responsive (se positionne au centre) */
+	aside {
+		position : static;
+		display: inline-block;
+		width: auto;
+		margin-top: 5dvh;
+	}
+	aside > a > img {
+		height : 20dvh;
+		width: auto;
+	}
 }
 
 /* =========== GÉNÉRAL ============ */

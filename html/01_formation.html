@@ -4,33 +4,56 @@
 	<head>
 		<meta charset="UTF-8">
 	</head>
-		<body class="formations">
-            <br><h2 class="formations">MES FORMATIONS</h2> <!-- Titre -->
-			<br> <!-- Texte -->
-			<table align="center"> <!-- Tableau des formations -->
-				<tr>
-					<th colspan="4" style="background-color: rgba(255, 0, 0, 0.377);">Tableau des études</th>
-				</tr>
-				<tr>
-					<th>Collège (2018-2022)</th>
-					<td>2022</td>
-					<td>Brevet des collèges</td>
-				</tr>
-				<tr>
-					<th rowspan="2">Lycée (2022-2025)</th>
-					<td>2025</td>
-					<td>Certification Pix</td>
-				</tr>
-				<tr>
-					<td>2025</td>
-					<td>Bac. (Maths / NSI)</td>
-				</tr>
-				<tr>
-					<th>BTS (2025-2026)</th>
-					<td>/</td>
-					<td>/</td>
-				</tr>
-			</table>
-			<img id="pix" src="../images/pix.png" alt="Niveau pix: 850 / 1024" /> <!-- Image pix -->
+
+	<body class="formations">
+		<br><h2 class="formations">MES FORMATIONS</h2> <!-- Titre -->
+		<br>
+
+		<table align="center"> <!-- Tableau des formations -->
+			<tr>
+				<th colspan="4" style="background-color: rgba(255, 0, 0, 0.377);">Tableau des études</th>
+			</tr>
+			<tr>
+				<th>Collège (2018-2022)</th>
+				<td>2022</td>
+				<td>Brevet des collèges</td>
+			</tr>
+			<tr>
+				<th rowspan="2">Lycée (2022-2025)</th>
+				<td>2025</td>
+				<td>Certification Pix</td>
+			</tr>
+			<tr>
+				<td>2025</td>
+				<td>Bac. (Maths / NSI)</td>
+			</tr>
+			<tr>
+				<th>BTS (2025-2026)</th>
+				<td>2026</td>
+				<td>Certification Voltaire</td>
+			</tr>
+		</table>
+
+		<!-- Images et liens certifications -->
+		<aside class="certifications">
+			<a href="https://app.pix.fr/verification-certificat" target="_blank">
+				<img src="../images/pix.png" alt="Certification Pix: 579 points" />
+			</a>
+			<a href="https://mon.certificat-voltaire.fr/verification-certificat?code=LXFFCFR" target="_blank">
+				<img src="../images/voltaire.png" alt="Certification Voltaire: 572 points" />
+			</a>
+		</aside>
+
+		<!-- Affiche le code pour la certification pix lorsque le lien est cliqué -->
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const pixLink = document.querySelector('a[href*="pix.fr"]');
+				if (pixLink) {
+					pixLink.addEventListener('click', function(e) {
+						alert('Code de certification Pix : P-X97QRYQ9');
+					});
+				}
+			});
+		</script>
 	</body>
 </html>
