@@ -92,11 +92,30 @@ picture > img { /* Images dans les boutons */
 
 /*-------------====={Pied de page}=====--------------*/
 footer { /* Style du pied de page */
-	color : #ffdcdc;
+	color : #00d0ff;
 	text-align: left;
 	font-size: 2.5dvh;
 	line-height: 2.5dvh;
 	font-family : Texte;
+}
+
+#musiqueButton { /* Bouton play/pause de la musique */
+	background-color: rgba(0, 208, 255, 0.2);
+	color: #00d0ff;
+	border: 0.2dvh solid #00d0ff;
+	border-radius: 50%;
+	font-size: 1.8dvh;
+	line-height: 2dvh;
+	width: 3.5dvh;
+	height: 3.5dvh;
+	cursor: pointer;
+	margin-right: 1dvh;
+	vertical-align: middle;
+	text-align: center;
+	padding: 0;
+}
+#musiqueButton:hover { /* Lorsque survolé */
+	background-color: rgba(0, 208, 255, 0.4);
 }
 
 
