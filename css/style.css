@@ -134,6 +134,18 @@ main { /* Style et positionnement de la boîte main */
 	border-radius: 1dvh;
 } 	
 
+article {
+	background-color: #FFFFFF20;
+	border: solid 0.2dvh #e0dcff;
+	border-radius: 1dvh;
+	display: inline-block;
+	max-width: 50dvh;
+}
+
+article > video {
+	width: 99%;
+}
+
 /* ========== FORMATIONS ========== */
 
 aside {
@@ -177,14 +189,7 @@ th { /* Couleur des cases titre */
 
 /* ========= TECHNOLOGIES ========= */
 
-.technologies > div {
-	background-color: #FFFFFF20;
-	border: solid 0.2dvh #e0dcff;
-	border-radius: 1dvh;
-	display: inline-block;
-}
-
-.technologies > div:hover {
+.technologies > article:hover {
 	background-color: #FFFFFF40;
 }
 
@@ -195,11 +200,37 @@ th { /* Couleur des cases titre */
 
 /* ============ PROJET ============ */
 
-.game_trailer { /* Positionnement de la vidéo */
-	height: 40dvh;
-	max-height: 45dvw;
-	width: 60dvh;
-	margin-top: 1dvh;}
+.article_header {
+	background-color: #ddff0055;
+	border-bottom: solid 0.2dvh #e0dcff;
+	border-top-left-radius: 1dvh;
+	border-top-right-radius: 1dvh;
+	padding: 0.3dvh;
+}
+
+.article_footer {
+	background-color: #3c00ff55;
+	border-top: solid 0.2dvh #e0dcff;
+	border-bottom-left-radius: 1dvh;
+	border-bottom-right-radius: 1dvh;
+	margin-top: 0.3dvh;
+	display: flex;
+	justify-content: center;
+}
+
+.article_footer > a {
+	display: inline-block;
+	width: 100%;
+}
+
+.article_footer > a:hover {
+	background-color: #FFFFFF40;
+}
+
+.icon {
+	height: 5dvh;
+	margin-top: 0.5dvh;
+}
 
 /* =========== CONTACT ============ */
 
