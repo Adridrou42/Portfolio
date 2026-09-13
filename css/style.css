@@ -21,6 +21,8 @@ body { /* Configurations générales */
 	background-size: 4dvh;
 }
 
+.page {padding: 1dvh;}
+
 #principal { /* Configurations générales spécifiques à l'index */
     background-size: cover;
 	background-position: center;
@@ -44,6 +46,11 @@ header { /* Position des boutons dans l'entête */
     display: flex;
     justify-content: space-between;
     padding: 0;
+	border: solid, 0.3dvh, #ff9100;
+	border-radius: 1dvh;
+	background-image: url("../images/header.png");
+	background-position: center;
+	background-size: cover;
 }
 
 /* Arière plan des boutons */
@@ -63,6 +70,7 @@ header { /* Position des boutons dans l'entête */
 	background-color: #00000000;
 	border: solid, 0.3dvh, #EEEEEE;
     margin: 0.5dvw;
+	border-radius: 2dvh;
 }
 
 @media (pointer: fine){ /* Animation du bouton lorsque l'écran n'est pas tactile */
@@ -122,7 +130,9 @@ footer { /* Style du pied de page */
 /*---------------====={Principal}=====---------------*/
 main { /* Style et positionnement de la boîte main */
 	height:83dvh;
-	border: 0.4dvh solid rgba(255, 255, 255, 0.555);} 	
+	border: 0.4dvh solid #5100ff;
+	border-radius: 1dvh;
+} 	
 
 /* ========== FORMATIONS ========== */
 
@@ -167,6 +177,17 @@ th { /* Couleur des cases titre */
 
 /* ========= TECHNOLOGIES ========= */
 
+.technologies > div {
+	background-color: #FFFFFF20;
+	border: solid 0.2dvh #e0dcff;
+	border-radius: 1dvh;
+	display: inline-block;
+}
+
+.technologies > div:hover {
+	background-color: #FFFFFF40;
+}
+
 .prog_logo { /* Taille et position des logos dans la page technos */
 	height: 12dvh;
 	margin: 1dvh;
@@ -209,8 +230,8 @@ form > div > input{
 
 @media (max-width: 160dvh) { /* Adaptativité à un écran de portable */
 	#principal{
-		margin-left: 1dvw;
-		margin-right: 1dvw;
+		margin-left: 0dvw;
+		margin-right: 0dvw;
 	}
 	main { /* Main responsive */
 		height:85dvh;}
@@ -254,11 +275,15 @@ h2.projet {color : rgba(9, 255, 0, 0.836);}
 h2.contact {color : rgba(234, 0, 255, 0.836);}
 
 /* Style du strong et du em */
-strong {color : rgb(206, 0, 0);font-weight: normal; }
+strong {color : rgb(0, 136, 255);font-weight: normal; }
 em {color : rgb(135, 233, 7); }
 
 /* Taille du conteneur affichant les pages secondaires */
-iframe {width: 100%; height: 100%; border: none;}
+iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
 
 /* Style des liens */
 a:link {color: rgba(255, 187, 0, 0.884);} /* Lien normal */
