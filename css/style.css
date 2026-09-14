@@ -140,10 +140,24 @@ article {
 	border-radius: 1dvh;
 	display: inline-block;
 	max-width: 50dvh;
+	margin-top: 2dvh;
+	margin-bottom: 2dvh;
 }
 
 article > video {
 	width: 99%;
+}
+
+/* ============ ACCUEIL =========== */
+
+.adridrou {
+	background-color: #000000b4;
+	max-width: none;
+}
+
+.adridrou > img {
+	width: 50dvh;
+	max-width: 95dvw;
 }
 
 /* ========== FORMATIONS ========== */
@@ -167,6 +181,11 @@ aside > a > img {
 	height : auto;
 	margin-top: 1dvh;
 	margin-bottom: 1dvh;
+	border-radius: 1dvh;
+}
+
+aside > a > img:hover {
+	background-color: #FFFFFF40;
 }
 
 /* Style du tableau de la page formations */
@@ -348,3 +367,4 @@ a:active {color: rgba(255, 187, 0, 0.884);} /* Lien cliqué */
 	text-align: center;
 	z-index: 10;
 }
+
